@@ -284,16 +284,16 @@ a {
     font-weight: 600;
     font-size: 3em;
   }
-  
-  .headline-description{
+ 
+  .headline-description {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-size: 1.9em;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
-  .connect{
+
+  .connect {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding-top: 20px;
@@ -301,8 +301,8 @@ a {
     color: #6071fe;
     text-transform: uppercase;
   }
-  
-  .social-links{
+
+  .social-links {
     display: flex;
     width: 50%;
     justify-content: space-between;

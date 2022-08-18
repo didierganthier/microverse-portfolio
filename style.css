@@ -86,7 +86,6 @@ a {
 }
 
 @media (max-width: 400px) {
-
   html,
   body {
     max-width: 100%;
@@ -162,7 +161,6 @@ a {
 }
 
 @media (max-width: 600px) {
-
   html,
   body {
     max-width: 100%;
@@ -239,7 +237,7 @@ a {
 }
 
 @media (max-width: 960px) {
-  html, 
+  html,
   body {
     max-width: 100%;
     overflow-x: hidden;
@@ -295,7 +293,7 @@ a {
     padding-bottom: 10px;
   }
   
-  .connect {
+  .connect{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding-top: 20px;

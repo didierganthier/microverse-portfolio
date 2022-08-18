@@ -1,3 +1,79 @@
-h1 {
+.logo {
   color: #6071fe;
+  font-size: 1.5em;
+}
+
+body {
+  font-family: 'Poppins', sans-serif
+}
+
+/* Postiion Fixed Navbar with logo on the left and list elements on the right */
+.navigation {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.links, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em;
+  display: flex;
+}
+
+.links li {
+  margin-right: 20px;
+}
+
+a {
+  color: #6071fe;
+  text-decoration: none;
+}
+
+.header {
+  padding-left: 260px;
+  padding-right: 260px;
+  padding-top: 359px;
+  height: 100vh;
+  background-image: url("images/header.png");
+}
+
+.headline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 4em;
+}
+
+.headline-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.connect {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 5 00;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #6071fe;
+  text-transform: uppercase;
+}
+
+.social-links {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }

@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@didierganthier](https://github.com/didierganthier)
 - Twitter: [@didierganthier_](https://twitter.com/didierganthier_)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/didierganthier)
+- LinkedIn: [didierganthier](https://linkedin.com/in/didierganthier)
 
 ## 🤝 Contributing
 

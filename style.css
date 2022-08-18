@@ -285,7 +285,7 @@ a {
     font-size: 3em;
   }
   
-  .headline-description {
+  .headline-description{
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-size: 1.9em;
@@ -302,7 +302,7 @@ a {
     text-transform: uppercase;
   }
   
-  .social-links {
+  .social-links{
     display: flex;
     width: 50%;
     justify-content: space-between;

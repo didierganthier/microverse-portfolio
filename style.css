@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Postiion Fixed Navbar with logo on the left and list elements on the right */
@@ -23,7 +23,8 @@ body {
   right: 0;
 }
 
-.links, ul {
+.links,
+ ul {
   list-style: none;
   margin: 0;
   padding: 0.5em;
@@ -63,7 +64,7 @@ a {
 
 .connect {
   font-family: 'Poppins', sans-serif;
-  font-weight: 5 00;
+  font-weight: 500;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #6071fe;

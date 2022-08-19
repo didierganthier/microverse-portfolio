@@ -8,6 +8,10 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+.separator {
+  width: 100%;
+}
+
 .navigation {
   position: fixed;
   display: flex;

@@ -86,6 +86,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .works {
@@ -96,6 +97,7 @@ a {
   background-color: #f7f7f7;
   justify-content: center;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .work {
@@ -108,7 +110,6 @@ a {
 
 .work-subtitle {
   display: flex;
-  /* Add grid columns */
   gap: 12px;
   align-items: center;
 }
@@ -152,6 +153,73 @@ a {
   border: #6071fe solid 1px;
   border-radius: 10px;
   padding: 10px;
+}
+
+.about-section {
+  display: flex;
+  padding: 142px;
+  background: white;
+  border-radius: 0 100px 0 0;
+}
+
+.about {
+  width: 42%;
+  margin-right: 10px;
+}
+
+.languages {
+  width: 57%;
+}
+
+hr {
+  height: 0.2px;
+  border: 0.2px solid gray;
+  width: 100%;
+}
+
+.about-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  color: black;
+}
+
+.languages-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: gray;
+  margin-top: 20px;
+}
+
+.languages-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+
+.language-card {
+  padding: 20px;
+  width: 100px;
+  border-radius: 10px;
+  background: #f7f7f7;
+}
+
+.frameworks, .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 36px;
 }
 
 @media (max-width: 400px) {

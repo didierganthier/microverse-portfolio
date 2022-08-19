@@ -49,6 +49,7 @@ a {
   padding-right: 300px;
   padding-top: 200px;
   height: 100vh;
+  border-radius: 100px;
   background-size: contain;
   background-image: url("images/header.png");
 }
@@ -92,8 +93,7 @@ a {
     overflow-x: hidden;
   }
 
-  .links,
-  ul {
+  .links {
     visibility: hidden;
   }
 
@@ -167,8 +167,7 @@ a {
     overflow-x: hidden;
   }
 
-  .links,
-  ul {
+  .links {
     visibility: hidden;
   }
 
@@ -243,8 +242,7 @@ a {
     overflow-x: hidden;
   }
 
-  .links,
-  ul {
+  .links {
     visibility: hidden;
   }
 
@@ -274,6 +272,8 @@ a {
   .header {
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
     padding-top: 300px;
     height: 100vh;
     background-image: url("images/header.png");

@@ -168,6 +168,7 @@ a {
 
 .languages {
   width: 57%;
+  display: block;
 }
 
 hr {
@@ -410,6 +411,11 @@ hr {
   .languages {
     width: 100%;
     margin-top: 40px;
+  }
+
+  ul,
+  .languages{
+    padding: 0;
   }
   
   hr {
@@ -661,6 +667,11 @@ hr {
   .languages {
     width: 100%;
     margin-top: 40px;
+  }
+  
+  ul,
+  .languages{
+    padding: 0;
   }
   
   hr {
@@ -918,6 +929,11 @@ hr {
     margin-top: 40px;
   }
   
+  ul,
+  .languages{
+    padding: 0;
+  }
+
   hr {
     height: 0.2px;
     border: 0.2px solid gray;

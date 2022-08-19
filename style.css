@@ -91,7 +91,7 @@ a {
 
 .works {
   display: grid;
-  grid-column: 3;
+  grid-template-columns: 3;
   gap: 142px;
   align-items: center;
   background-color: #f7f7f7;
@@ -214,7 +214,8 @@ hr {
   background: #f7f7f7;
 }
 
-.frameworks, .skills {
+.frameworks,
+.skills {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -223,6 +224,7 @@ hr {
 }
 
 @media (max-width: 400px) {
+
   html,
   body {
     max-width: 100%;
@@ -273,7 +275,7 @@ hr {
   .headline-description {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    font-size: 1.2em;
+    font-size: 0.2em;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -294,9 +296,96 @@ hr {
     align-items: center;
     margin-top: 20px;
   }
+
+
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    gap: 102px;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .work-image {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .img-container {
+    padding: 16px;
+  }
+
+  .work {
+    border: gray solid 0.3px;
+    border-radius: 20px;
+    background: white;
+    padding: 0;
+    display: block;
+  }
+
+  .work-container {
+    margin: 10px;
+  }
+
+  .work-subtitle {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .work-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: black;
+  }
+
+  .work-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 16px;
+    height: auto;
+  }
+
+  .tags {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .tag {
+    color: #6170ff;
+    background-color: #ebebff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .company {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .work-link {
+    color: #6071fe;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: medium;
+    border: #6071fe solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 600px) {
+
   html,
   body {
     max-width: 100%;
@@ -369,9 +458,96 @@ hr {
     align-items: center;
     margin-top: 20px;
   }
+
+
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    gap: 102px;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .work-image {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .img-container {
+    padding: 16px;
+  }
+
+  .work {
+    border: gray solid 0.3px;
+    border-radius: 20px;
+    background: white;
+    padding: 0;
+    display: block;
+  }
+
+  .work-container {
+    margin: 10px;
+  }
+
+  .work-subtitle {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .work-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: black;
+  }
+
+  .work-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 16px;
+    height: auto;
+  }
+
+  .tags {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .tag {
+    color: #6170ff;
+    background-color: #ebebff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .company {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .work-link {
+    color: #6071fe;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: medium;
+    border: #6071fe solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 960px) {
+
   html,
   body {
     max-width: 100%;
@@ -410,7 +586,11 @@ hr {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
-    padding-top: 300px;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     background-image: url("images/header.png");
   }
@@ -424,7 +604,7 @@ hr {
   .headline-description {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    font-size: 1.9em;
+    font-size: 1.2em;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -444,5 +624,90 @@ hr {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+  }
+
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    gap: 102px;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .work-image {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .img-container {
+    padding: 16px;
+  }
+
+  .work {
+    border: gray solid 0.3px;
+    border-radius: 20px;
+    background: white;
+    padding: 0;
+    display: block;
+  }
+
+  .work-container {
+    margin: 10px;
+  }
+
+  .work-subtitle {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .work-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: black;
+  }
+
+  .work-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 16px;
+    height: auto;
+  }
+
+  .tags {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .tag {
+    color: #6170ff;
+    background-color: #ebebff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .company {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .work-link {
+    color: #6071fe;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: medium;
+    border: #6071fe solid 1px;
+    border-radius: 10px;
+    padding: 10px;
   }
 }

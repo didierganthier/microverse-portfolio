@@ -8,7 +8,6 @@ body {
   background: #f7f7f7;
 }
 
-/* Postiion Fixed Navbar with logo on the left and list elements on the right */
 .navigation {
   position: fixed;
   display: flex;
@@ -221,6 +220,17 @@ hr {
   gap: 12px;
   margin-top: 20px;
   margin-bottom: 36px;
+}
+
+.about-work-link {
+  color: #6071fe;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: medium;
+  border: #6071fe solid 1px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 40%;
 }
 
 @media (max-width: 400px) {
@@ -709,5 +719,95 @@ hr {
     border: #6071fe solid 1px;
     border-radius: 10px;
     padding: 10px;
+  }
+
+  .about-section {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    border-radius: 0 100px 0 0;
+  }
+  
+  .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .languages {
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  hr {
+    height: 0.2px;
+    border: 0.2px solid gray;
+    width: 100%;
+  }
+  
+  .about-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: black;
+  }
+  
+  .languages-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: gray;
+    margin-top: 20px;
+  }
+  
+  .languages-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .language-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 36px;
+  }
+  
+  .language-card {
+    display: flex;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+    background: #f7f7f7;
+  }
+
+  .language-name {
+    padding-left: 10px;
+  }
+
+  .about-work-link {
+    color: #6071fe;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: medium;
+    border: #6071fe solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+  }
+  
+  .frameworks,
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 36px;
   }
 }

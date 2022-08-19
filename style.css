@@ -4,8 +4,8 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   background: #f7f7f7;
+  font-family: "Poppins ", sans-serif;
 }
 
 .navigation {
@@ -16,7 +16,6 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 10px;
-  padding-bottom: 10px;
   background: white;
   top: 0;
   left: 0;
@@ -56,13 +55,11 @@ a {
 }
 
 .headline {
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 4em;
 }
 
 .headline-description {
-  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   font-size: 2em;
   padding-top: 10px;
@@ -70,7 +67,6 @@ a {
 }
 
 .connect {
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -114,7 +110,6 @@ a {
 }
 
 .work-title {
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 3em;
   color: black;
@@ -178,14 +173,12 @@ hr {
 }
 
 .about-title {
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 3em;
   color: black;
 }
 
 .languages-title {
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.2em;
   color: gray;
@@ -235,7 +228,6 @@ hr {
 }
 
 @media (max-width: 400px) {
-
   html,
   body {
     max-width: 100%;
@@ -278,13 +270,11 @@ hr {
   }
 
   .headline {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 2em;
   }
 
   .headline-description {
-    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-size: 0.2em;
     padding-top: 10px;
@@ -292,7 +282,6 @@ hr {
   }
 
   .connect {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -308,10 +297,8 @@ hr {
     margin-top: 20px;
   }
 
-
   .works {
     display: grid;
-    gap: 12px;
     width: 100%;
     gap: 102px;
     align-items: center;
@@ -350,7 +337,6 @@ hr {
   }
 
   .work-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 2em;
     color: black;
@@ -401,61 +387,58 @@ hr {
     background: white;
     border-radius: 0 100px 0 0;
   }
-  
+
   .about {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  
+
   .languages {
     width: 100%;
     margin-top: 40px;
   }
 
   ul,
-  .languages{
+  .languages {
     padding: 0;
   }
-  
+
   hr {
     height: 0.2px;
     border: 0.2px solid gray;
     width: 100%;
   }
-  
+
   .about-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 3em;
     color: black;
   }
-  
+
   .languages-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     color: gray;
     margin-top: 20px;
   }
-  
+
   .languages-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
   }
-  
+
   .language-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 12px;
     margin-top: 20px;
     margin-bottom: 36px;
   }
-  
+
   .language-card {
     display: flex;
     padding: 20px;
@@ -478,7 +461,7 @@ hr {
     padding: 10px;
     width: 40%;
   }
-  
+
   .frameworks,
   .skills {
     display: flex;
@@ -490,7 +473,6 @@ hr {
 }
 
 @media (max-width: 600px) {
-
   html,
   body {
     max-width: 100%;
@@ -534,13 +516,11 @@ hr {
   }
 
   .headline {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 2em;
   }
 
   .headline-description {
-    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-size: 1.2em;
     padding-top: 10px;
@@ -548,7 +528,6 @@ hr {
   }
 
   .connect {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -564,10 +543,8 @@ hr {
     margin-top: 20px;
   }
 
-
   .works {
     display: grid;
-    gap: 12px;
     width: 100%;
     gap: 102px;
     align-items: center;
@@ -606,7 +583,6 @@ hr {
   }
 
   .work-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 2em;
     color: black;
@@ -657,61 +633,58 @@ hr {
     background: white;
     border-radius: 0 100px 0 0;
   }
-  
+
   .about {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  
+
   .languages {
     width: 100%;
     margin-top: 40px;
   }
-  
+
   ul,
-  .languages{
+  .languages {
     padding: 0;
   }
-  
+
   hr {
     height: 0.2px;
     border: 0.2px solid gray;
     width: 100%;
   }
-  
+
   .about-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 3em;
     color: black;
   }
-  
+
   .languages-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     color: gray;
     margin-top: 20px;
   }
-  
+
   .languages-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
   }
-  
+
   .language-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 12px;
     margin-top: 20px;
     margin-bottom: 36px;
   }
-  
+
   .language-card {
     display: flex;
     padding: 20px;
@@ -734,7 +707,7 @@ hr {
     padding: 10px;
     width: 40%;
   }
-  
+
   .frameworks,
   .skills {
     display: flex;
@@ -746,7 +719,6 @@ hr {
 }
 
 @media (max-width: 960px) {
-
   html,
   body {
     max-width: 100%;
@@ -786,7 +758,6 @@ hr {
     display: flex;
     flex-direction: column;
     padding-top: 200px;
-    padding-bottom: 30px;
     margin-bottom: 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -795,13 +766,11 @@ hr {
   }
 
   .headline {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 2em;
   }
 
   .headline-description {
-    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     font-size: 1.2em;
     padding-top: 10px;
@@ -809,7 +778,6 @@ hr {
   }
 
   .connect {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -827,7 +795,6 @@ hr {
 
   .works {
     display: grid;
-    gap: 12px;
     width: 100%;
     gap: 102px;
     align-items: center;
@@ -866,7 +833,6 @@ hr {
   }
 
   .work-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 2em;
     color: black;
@@ -917,20 +883,20 @@ hr {
     background: white;
     border-radius: 0 100px 0 0;
   }
-  
+
   .about {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  
+
   .languages {
     width: 100%;
     margin-top: 40px;
   }
-  
+
   ul,
-  .languages{
+  .languages {
     padding: 0;
   }
 
@@ -939,39 +905,36 @@ hr {
     border: 0.2px solid gray;
     width: 100%;
   }
-  
+
   .about-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 3em;
     color: black;
   }
-  
+
   .languages-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     color: gray;
     margin-top: 20px;
   }
-  
+
   .languages-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
   }
-  
+
   .language-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 12px;
     margin-top: 20px;
     margin-bottom: 36px;
   }
-  
+
   .language-card {
     display: flex;
     padding: 20px;
@@ -994,11 +957,10 @@ hr {
     padding: 10px;
     width: 40%;
   }
-  
+
   .frameworks,
   .skills {
     display: flex;
-    flex-wrap: wrap;
     gap: 12px;
     margin-top: 20px;
     margin-bottom: 36px;

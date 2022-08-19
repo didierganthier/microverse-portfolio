@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
 }
 
 /* Postiion Fixed Navbar with logo on the left and list elements on the right */
@@ -49,7 +50,8 @@ a {
   padding-right: 300px;
   padding-top: 200px;
   height: 100vh;
-  border-radius: 100px;
+  border-radius: 0 0 0 100px;
+  background: white;
   background-size: contain;
   background-image: url("images/header.png");
 }
@@ -84,6 +86,72 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+}
+
+.works {
+  display: grid;
+  grid-column: 3;
+  gap: 142px;
+  align-items: center;
+  background-color: #f7f7f7;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.work {
+  padding: 24px;
+  border: gray solid 0.3px;
+  border-radius: 20px;
+  background: white;
+  display: flex;
+}
+
+.work-subtitle {
+  display: flex;
+  /* Add grid columns */
+  gap: 12px;
+  align-items: center;
+}
+
+.work-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  color: black;
+}
+
+.work-details {
+  align-items: center;
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+.tags {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  color: #6170ff;
+  background-color: #ebebff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.company {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.work-link {
+  color: #6071fe;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: medium;
+  border: #6071fe solid 1px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 @media (max-width: 400px) {

@@ -991,6 +991,21 @@ hr {
     border-radius: 50px 0 0;
   }
 
+  .contact-title {
+    font-weight: 600;
+    font-size: 2em;
+    color: white;
+  }
+
+  .contact-subtitle {
+    font-weight: 100;
+    font-size: 1.2em;
+    text-align: center;
+    color: #d9dbff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .form-section {
     display: flex;
     flex-direction: column;
@@ -1000,15 +1015,20 @@ hr {
   }
 
   input {
-    width: 100%;
+    width: 150%;
     border-radius: 2px;
     border: 1px solid #6071fe;
     padding: 10px;
     margin-bottom: 10px;
   }
 
+  input:focus {
+    outline: none;
+  }
+
   textarea {
-    width: 100%;
+    width: 150%;
+    height: 100px;
     border-radius: 2px;
     border: 1px solid #6071fe;
     padding: 10px;

@@ -20,7 +20,7 @@
   }
 
   .logo {
-    color: #6071fe;
+    color: #394ae5;
     font-size: 1.5em;
     text-decoration: none;
     white-space: nowrap;
@@ -64,7 +64,7 @@
     font-weight: 500;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #6071fe;
+    color: #394ae5;
     text-transform: uppercase;
   }
 
@@ -154,11 +154,11 @@
   }
 
   .work-link {
-    color: #6071fe;
+    color: #394ae5;
     text-decoration: none;
     margin-top: 20px;
     font-size: medium;
-    border: #6071fe solid 1px;
+    border: #394ae5 solid 1px;
     border-radius: 10px;
     padding: 10px;
   }
@@ -236,11 +236,11 @@
   }
 
   .about-work-link {
-    color: #6071fe;
+    color: #394ae5;
     text-decoration: none;
     margin-top: 20px;
     font-size: medium;
-    border: #6071fe solid 1px;
+    border: #394ae5 solid 1px;
     border-radius: 10px;
     padding: 10px;
     justify-content: center;
@@ -260,7 +260,7 @@
   .contact {
     display: flex;
     flex-direction: column;
-    background: #6071fe;
+    background: #394ae5;
     padding: 24px;
     background-image: url("images/contact-form-bg.png");
     background-size: cover;
@@ -295,7 +295,7 @@
   input {
     width: 95%;
     border-radius: 5px;
-    border: 1px solid #6071fe;
+    border: 1px solid #394ae5;
     padding: 10px;
     margin-bottom: 10px;
   }
@@ -315,7 +315,7 @@
     width: 95%;
     height: 100px;
     border-radius: 5px;
-    border: 1px solid #6071fe;
+    border: 1px solid #394ae5;
     padding: 10px;
     margin-right: 40px;
     margin-bottom: 10px;
@@ -325,9 +325,9 @@
   .submit {
     width: 50%;
     border-radius: 10px;
-    border: 1px solid #6071fe;
+    border: 1px solid #394ae5;
     padding: 10px;
-    color: #6071fe;
+    color: #394ae5;
     margin-top: 10px;
     background: white;
     font-weight: bold;
@@ -336,7 +336,7 @@
   }
 
   .submit:hover {
-    background: #6071fe;
+    background: #394ae5;
     color: white;
     border: white solid 1px;
   }
@@ -344,7 +344,7 @@
 
 @media (min-width: 992px) {
   .logo {
-    color: #6071fe;
+    color: #394ae5;
     font-size: 1.5em;
   }
 
@@ -385,7 +385,7 @@
   }
 
   a {
-    color: #6071fe;
+    color: #3447f7;
     text-decoration: none;
   }
 
@@ -421,7 +421,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 1.2em;
-    color: #6071fe;
+    color: #3347f4;
     text-transform: uppercase;
   }
 
@@ -460,17 +460,17 @@
   }
 
   .work-link {
-    color: #6071fe;
+    color: #394ae5;
     text-decoration: none;
     margin-top: 20px;
     font-size: medium;
-    border: #6071fe solid 1px;
+    border: #394ae5 solid 1px;
     border-radius: 10px;
     padding: 10px;
   }
 
   .work:hover .work-link {
-    background-color: #6071fe;
+    background-color: #394ae5;
     text-decoration: none;
     color: white;
     border: white;
@@ -501,7 +501,7 @@
   }
 
   .tag {
-    color: #6170ff;
+    color: #3b4df6;
     background-color: #ebebff;
     padding: 10px;
     border-radius: 10px;
@@ -544,7 +544,7 @@
   .languages-title {
     font-weight: 600;
     font-size: 1.2em;
-    color: gray;
+    color: black;
     margin-top: 20px;
   }
 
@@ -575,30 +575,31 @@
   .skills {
     display: flex;
     flex-wrap: wrap;
+    color: black;
     gap: 12px;
     margin-top: 20px;
     margin-bottom: 36px;
   }
 
   .about-work-link {
-    color: #6071fe;
+    color: #394ae5;
     text-decoration: none;
     margin-top: 20px;
     font-size: medium;
-    border: #6071fe solid 1px;
+    border: #394ae5 solid 1px;
     border-radius: 10px;
     padding: 10px;
   }
 
   .about-work-link:hover {
-    background-color: #6071fe;
+    background-color: #4153fa;
     color: white;
   }
 
   .contact {
     display: flex;
     flex-direction: column;
-    background: #6071fe;
+    background: #394ae5;
     padding-top: 142px;
     padding-bottom: 100px;
     background-image: url("images/contact-form-bg.png");
@@ -619,7 +620,7 @@
     font-weight: 100;
     font-size: 1.5em;
     text-align: center;
-    color: #d9dbff;
+    color: white;
     padding-left: 300px;
     padding-right: 300px;
     padding-bottom: 10px;
@@ -633,7 +634,7 @@
 
   .name-input {
     border-radius: 5px;
-    border: 1px solid #6071fe;
+    border: 1px solid #394ae5;
     padding: 20px;
     margin-left: 296px;
     margin-right: 296px;
@@ -642,7 +643,7 @@
 
   .email-input {
     border-radius: 5px;
-    border: 1px solid #6071fe;
+    border: 1px solid #394ae5;
     padding: 20px;
     margin-left: 296px;
     margin-right: 296px;
@@ -661,9 +662,9 @@
 
   .submit {
     border-radius: 10px;
-    border: 1px solid #6071fe;
+    border: 1px solid #394ae5;
     padding: 20px;
-    color: #6071fe;
+    color: #394ae5;
     margin-top: 10px;
     margin-left: 406px;
     margin-right: 406px;
@@ -680,7 +681,7 @@
   textarea {
     height: 100px;
     border-radius: 5px;
-    border: 1px solid #6071fe;
+    border: 1px solid #394ae5;
     padding: 10px;
     margin-left: 296px;
     margin-right: 296px;
@@ -689,7 +690,7 @@
   }
 
   .submit:hover {
-    background: #6071fe;
+    background: #394ae5;
     color: white;
     border: white solid 2px;
   }

@@ -287,9 +287,12 @@
         <h2 class="contact-title">Contact me</h2>
         <p class="contact-subtitle">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
         <form class="form-section" method="post" action="https://formspree.io/f/xdojkarj">
-            <input type="text" class="name-input" placeholder="Enter your name" required maxlength="30"/>
-            <input type="email" class="email-input" name="email" placeholder="Enter your email" required />
-            <textarea placeholder="Write your message here" maxlength="500" required></textarea>
+            <label class="form-label" for="name">Name</label>
+            <input id="name" type="text" class="name-input" placeholder="Enter your name" required maxlength="30"/>
+            <label class="form-label" for="email">Email</label>
+            <input id="email" type="email" class="email-input" name="email" placeholder="Enter your email" required />
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" placeholder="Write your message here" maxlength="500" required></textarea>
             <input type="submit" class="submit" value="Get in touch"/>
         </form>
     </section>

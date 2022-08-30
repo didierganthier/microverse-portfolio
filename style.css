@@ -300,6 +300,13 @@
     margin-bottom: 10px;
   }
 
+  .form-label {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: white;
+    display: none;
+  }
+
   input:focus {
     outline: none;
   }
@@ -640,6 +647,16 @@
     margin-left: 296px;
     margin-right: 296px;
     margin-bottom: 40px;
+  }
+
+  .form-label {
+    font-weight: 100;
+    font-size: 1.2em;
+    color: white;
+    display: none;
+    margin-left: 296px;
+    margin-right: 296px;
+    margin-bottom: 10px;
   }
 
   .submit {

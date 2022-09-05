@@ -23,7 +23,6 @@
     visibility: hidden;
   }
 
-  
   /* Close button at top right aabove all elements */
   .close {
     position: absolute;
@@ -492,7 +491,6 @@
 
   .works {
     display: grid;
-    grid-template-columns: 3;
     gap: 142px;
     align-items: center;
     background-color: #f7f7f7;

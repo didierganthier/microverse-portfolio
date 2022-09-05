@@ -6,7 +6,6 @@ function toggleNav() {
     //hide element by removing style
     hamburgerElement.classList.toggle("isHidden");
     document.getElementsByClassName("logo")[0].classList.toggle("isHidden");
-    document.getElementsByClassName("navigation")[0].classList.toggle("isHidden");
     closeElement.classList.toggle("isHidden");
     mobileLinksElement.classList.toggle("isHidden");
 

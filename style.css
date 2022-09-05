@@ -19,11 +19,14 @@
     display: block;
   }
 
+  .isHidden {
+    visibility: hidden;
+  }
+
   
   /* Close button at top right aabove all elements */
   .close {
     position: absolute;
-    visibility: hidden;
     top: 62px;
     right: 38px;
     z-index: 100;
@@ -35,7 +38,7 @@
 
   .mobile-links {
     position: fixed;
-    visibility: hidden;
+    margin: 0%;
     top: 0;
     left: 0;
     width: 100vw;
@@ -43,7 +46,7 @@
     background-color: #6070ff;
     z-index: 1;
     opacity: 0.95;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     padding-top: 106px;
     mix-blend-mode: multiply;
   }

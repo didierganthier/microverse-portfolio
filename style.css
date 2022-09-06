@@ -1,3 +1,15 @@
+.project {
+  background-color: white;
+}
+
+.close-top {
+  cursor: pointer;
+}
+
+.close-top-desktop {
+  cursor: pointer;
+}
+
 @media (max-width: 991px) {
   html,
   body {

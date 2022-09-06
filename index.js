@@ -56,54 +56,56 @@ const works = [
 ];
 
 const projects = document.getElementsByClassName('project');
-for (let i = 0; i < projects.length; i += 1) {
-  document.getElementsByClassName('project')[i].addEventListener('click', () => {
-    document.getElementsByClassName('work-title-popup')[1].innerHTML = works[i].title;
-    document.getElementsByClassName('company')[1].innerHTML = works[i].company;
-    document.getElementsByClassName('company-title')[1].innerHTML = works[i].companyTitle;
-    document.getElementsByClassName('company-year')[1].innerHTML = works[i].year;
-    // document.getElementsByClassName('work-description')[1].innerHTML = works[i].description;
-    document.getElementsByClassName('work-image-popup')[0].src = works[i].image;
-    document.getElementsByClassName('popup')[0].classList.toggle('isHidden');
-    document.querySelector('header').classList.add('blur');
-    document.querySelectorAll('section').forEach((section) => {
-      section.classList.add('blur');
-    });
-  });
-}
-
-document.getElementsByClassName('close-top-desktop')[0].addEventListener('click', () => {
-  document.getElementsByClassName('popup')[0].classList.toggle('isHidden');
-  document.querySelectorAll('section').forEach((section) => {
-    if (section.classList.contains('blur')) {
-      section.classList.remove('blur');
-    }
-  });
-});
-
-// Mobile Popup
 const mobileProjects = document.getElementsByClassName('project-mobile');
-for (let i = 0; i < mobileProjects.length; i += 1) {
-  document.getElementsByClassName('project-mobile')[i].addEventListener('click', () => {
-    document.getElementsByClassName('work-title-popup')[1].innerHTML = works[i].title;
-    document.getElementsByClassName('company')[1].innerHTML = works[i].company;
-    document.getElementsByClassName('company-title')[1].innerHTML = works[i].companyTitle;
-    document.getElementsByClassName('company-year')[1].innerHTML = works[i].year;
-    // document.getElementsByClassName('work-description')[1].innerHTML = works[i].description;
-    document.getElementsByClassName('work-image')[0].src = works[i].image;
-    document.getElementsByClassName('mobile-popup')[0].classList.toggle('isHidden');
-    document.querySelector('header').classList.add('blur-mobile');
-    document.querySelectorAll('section').forEach((section) => {
-      section.classList.toggle('blur-mobile');
-    });
+
+// Function to blur the background when the popup is open
+function blurBackground(blurClassName) {
+  document.querySelector('header').classList.add(blurClassName);
+  document.querySelectorAll('section').forEach((section) => {
+    section.classList.add(blurClassName);
   });
 }
 
-document.getElementsByClassName('close-top')[0].addEventListener('click', () => {
-  document.getElementsByClassName('mobile-popup')[0].classList.toggle('isHidden');
+function unBlurBackground(blurClassName) {
+  document.querySelector('header').classList.remove(blurClassName);
   document.querySelectorAll('section').forEach((section) => {
-    if (section.classList.contains('blur-mobile')) {
-      section.classList.remove('blur-mobile');
+    if (section.classList.contains(blurClassName)) {
+      section.classList.remove(blurClassName);
     }
   });
-});
+}
+
+// Function to set the work cards
+function setWorkCards(projectsEl, popupClassName, title, company, companyTitle, year, image) {
+  for (let i = 0; i < projectsEl.length; i += 1) {
+    projectsEl[i].addEventListener('click', () => {
+      document.getElementsByClassName(title)[1].innerHTML = works[i].title;
+      document.getElementsByClassName(company)[1].innerHTML = works[i].company;
+      document.getElementsByClassName(companyTitle)[1].innerHTML = works[i].companyTitle;
+      document.getElementsByClassName(year)[1].innerHTML = works[i].year;
+      document.getElementsByClassName(image)[0].src = works[i].image;
+      document.getElementsByClassName(popupClassName)[0].classList.toggle('isHidden');
+      if (window.innerWidth > 992) {
+        blurBackground('blur');
+      } else {
+        blurBackground('blur-mobile');
+      }
+    });
+  }
+}
+
+// Function to close the popup
+function closePopup(closeIconClass, popupClass, blurClassName) {
+  document.getElementsByClassName(closeIconClass)[0].addEventListener('click', () => {
+    document.getElementsByClassName(popupClass)[0].classList.toggle('isHidden');
+    unBlurBackground(blurClassName);
+  });
+}
+
+// Call setWorkCards function for each project
+setWorkCards(projects, 'popup', 'work-title-popup', 'company', 'company-title', 'company-year', 'work-image-popup');
+setWorkCards(mobileProjects, 'mobile-popup', 'work-title-popup', 'company', 'company-title', 'company-year', 'work-image');
+
+// Call closePopup function for each project
+closePopup('close-top-desktop', 'popup', 'blur');
+closePopup('close-top', 'mobile-popup', 'blur-mobile');

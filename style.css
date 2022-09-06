@@ -2,6 +2,10 @@
   background-color: white;
 }
 
+.project-mobile {
+  background-color: white;
+}
+
 .close-top {
   cursor: pointer;
 }
@@ -39,7 +43,7 @@
     visibility: hidden;
   }
 
-  .blur {
+  .blur-mobile {
     filter: blur(10px);
   }
 
@@ -626,12 +630,11 @@
   }
 
   .work-image-popup {
-    position: relative;
     background: white;
     border-radius: 5px;
     padding: 24px;
-    height: 100%;
     width: 95%;
+    height: 460px;
   }
 
   .header-popup {

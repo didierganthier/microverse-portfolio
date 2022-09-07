@@ -183,3 +183,6 @@ setWorkCards(mobileProjects, 'mobile-popup', 'work-title-popup', 'company', 'com
 // Call closePopup function for each project
 closePopup('close-top-desktop', 'popup', 'blur');
 closePopup('close-top', 'mobile-popup', 'blur-mobile');
+
+// Get the form element
+const formElement = document.getElementsByClassName('form-section')[0];

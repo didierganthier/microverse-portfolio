@@ -900,6 +900,34 @@
     outline: none;
   }
 
+  .error {
+    color: white;
+    background-color: red;
+    font-size: 1em;
+    margin-left: 406px;
+    margin-right: 406px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+  }
+
+  .success {
+    color: white;
+    background-color: green;
+    font-size: 1em;
+    margin-left: 406px;
+    margin-right: 406px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+  }
+
   textarea {
     height: 100px;
     border-radius: 5px;

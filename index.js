@@ -55,6 +55,80 @@ const works = [
   },
 ];
 
+// Add work section
+function addDesktopWorkSection() {
+  const workSection = document.getElementsByClassName('works')[0];
+  works.forEach((work) => {
+    const workElement = document.createElement('div');
+    workElement.classList.add('work');
+    workElement.innerHTML = `
+    <div class="work-container">
+    <div class="work">
+        <div class="img-container">
+            <img src="${work.image}"  class="work-image" alt="Showcase of the work"> 
+        </div>
+        <div class="work-details">
+            <h2 class="work-title">${work.title}</h2>
+            <div class="work-subtitle">
+                <p class="company">${work.company}</p>
+                <img src="images/counter.png" width="10" height="10" alt="counter">
+                <p>${work.companyTitle}</p>
+                <img src="images/counter.png" alt="counter">
+                <p>${work.year}</p>
+            </div>
+            <p class="work-description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <ul class="tags">
+                <li class="tag">html</li>
+                <li class="tag">css</li>
+                <li class="tag">javascript</li>
+            </ul>
+            <button class="work-link project">See Project</button>
+        </div>   
+    </div>
+</div>
+    `;
+    workSection.appendChild(workElement);
+  });
+}
+
+function addMobileWorkSection() {
+  const workSection = document.getElementsByClassName('works-mobile')[0];
+  works.forEach((work) => {
+    const workElement = document.createElement('div');
+    workElement.classList.add('work');
+    workElement.innerHTML = `
+    <div class="work-container">
+            <div class="work">
+                <div class="img-container">
+                    <img src="${work.image}"  class="work-image" alt="Showcase of the work"> 
+                </div>
+                <div class="work-details">
+                    <h2 class="work-title">Tonic</h2>
+                    <div class="work-subtitle">
+                        <p class="company">Canopy</p>
+                        <img src="images/counter.png" width="10" height="10" alt="counter">
+                        <p>Back End Dev</p>
+                        <img src="images/counter.png" alt="counter">
+                        <p>2015</p>
+                    </div>
+                    <p class="work-description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <ul class="tags">
+                        <li class="tag">html</li>
+                        <li class="tag">css</li>
+                        <li class="tag">javascript</li>
+                    </ul>
+                    <button class="work-link project-mobile">See Project</button>
+                </div>   
+            </div>
+        </div>
+    `;
+    workSection.appendChild(workElement);
+  });
+}
+
+addDesktopWorkSection();
+addMobileWorkSection();
+
 const projects = document.getElementsByClassName('project');
 const mobileProjects = document.getElementsByClassName('project-mobile');
 

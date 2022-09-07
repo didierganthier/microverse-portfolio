@@ -185,4 +185,4 @@ closePopup('close-top-desktop', 'popup', 'blur');
 closePopup('close-top', 'mobile-popup', 'blur-mobile');
 
 // Get the form element
-const formElement = document.getElementsByClassName('form-section')[0];
+// const formElement = document.getElementsByClassName('form-section')[0];

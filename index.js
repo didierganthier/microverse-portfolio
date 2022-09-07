@@ -185,4 +185,75 @@ closePopup('close-top-desktop', 'popup', 'blur');
 closePopup('close-top', 'mobile-popup', 'blur-mobile');
 
 // Get the form element
-// const formElement = document.getElementsByClassName('form-section')[0];
+const formElement = document.getElementsByClassName('form-section')[0];
+
+// Get the render element
+const renderElement = document.getElementsByClassName('render')[0];
+
+// Check if the email is lowercase
+function checkEmail(email) {
+  return email === email.toLowerCase();
+}
+
+// Check if the email is valid
+// function validateEmail(email) {
+//   const re = /\S+@\S+\.\S+/;
+//   return re.test(email);
+// }
+
+// Remove error after 5 seconds
+function removeError() {
+  setTimeout(() => {
+    renderElement.classList.remove('error');
+    renderElement.classList.remove('success');
+    renderElement.innerHTML = '';
+  }, 5000);
+}
+
+// Function to validate the form
+function validateForm() {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  if (name === '' || email === '' || message === '') {
+    renderElement.classList.add('error');
+    renderElement.innerHTML = 'All fields are required';
+    removeError();
+    return false;
+  }
+
+  if (!checkEmail(email)) {
+    renderElement.classList.add('error');
+    renderElement.innerHTML = 'Email must be lowercase';
+    removeError();
+    document.getElementById('email').value = email.toLowerCase();
+    renderElement.innerHTML = 'We put it in lowercase for you 🥳 You may submit';
+    renderElement.classList.add('success');
+    removeError();
+    return false;
+  }
+
+  return true;
+}
+
+// Function to submit the form
+function submitForm() {
+  formElement.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      // submit the form
+      formElement.submit();
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+      renderElement.classList.remove('error');
+      renderElement.classList.remove('isHidden');
+      renderElement.classList.add('success');
+      renderElement.innerHTML = 'Your message has been sent';
+      removeError();
+    }
+  });
+}
+
+submitForm();

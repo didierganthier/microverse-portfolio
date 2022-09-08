@@ -477,10 +477,56 @@
     cursor: pointer;
   }
 
+  .reset {
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid red;
+    padding: 10px;
+    color: red;
+    margin-top: 10px;
+    background: white;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+  }
+
+  .resset:hover {
+    background: red;
+    color: white;
+  }
+
   .submit:hover {
     background: #394ae5;
     color: white;
     border: white solid 1px;
+  }
+
+  .error {
+    color: white;
+    background-color: red;
+    font-size: 1em;
+    margin-left: 406px;
+    margin-right: 406px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+  }
+
+  .success {
+    color: white;
+    background-color: green;
+    font-size: 1em;
+    margin-left: 406px;
+    margin-right: 406px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
   }
 }
 
@@ -894,6 +940,25 @@
     font-weight: bold;
     font-size: medium;
     cursor: pointer;
+  }
+
+  .reset {
+    border-radius: 10px;
+    border: 1px solid red;
+    padding: 20px;
+    color: red;
+    margin-top: 10px;
+    margin-left: 406px;
+    margin-right: 406px;
+    background: white;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+  }
+
+  .reset:hover {
+    background-color: red;
+    color: white;
   }
 
   input:focus {

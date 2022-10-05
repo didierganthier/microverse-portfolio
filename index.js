@@ -14,14 +14,15 @@ document.getElementsByClassName('mobile-links')[0].addEventListener('click', tog
 
 const works = [
   {
-    title: 'Tonic',
-    company: 'CANOPY',
-    companyTitle: 'Back End Dev',
-    year: 2015,
-    description: '',
-    tags: ['html', 'css', 'javascript'],
-    image: 'images/work1.png',
-    link: 'https://www.google.com',
+    title: 'To-do list',
+    company: 'Microverse',
+    companyTitle: 'Full Stack Developer',
+    year: 2022,
+    description: '"To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. A simple website that allows for doing that, and built using ES6 and Webpack!',
+    tags: ['html', 'css', 'javascript', 'webpack'],
+    image: 'images/realtodo.png',
+    source: 'https://github.com/didierganthier/todo-list/',
+    link: 'https://didierganthier.github.io/todo-list/',
   },
   {
     title: 'Mutli-Post Stories',
@@ -31,6 +32,7 @@ const works = [
     description: '',
     tags: ['html', 'css', 'javascript'],
     image: 'images/work2.png',
+    source: 'https://github.com/didierganthier/todo-list/',
     link: 'https://www.google.com',
   },
   {
@@ -41,6 +43,7 @@ const works = [
     description: '',
     tags: ['html', 'css', 'javascript'],
     image: 'images/work3.png',
+    source: 'https://github.com/didierganthier/todo-list/',
     link: 'https://www.google.com',
   },
   {
@@ -51,6 +54,7 @@ const works = [
     description: '',
     tags: ['html', 'css', 'javascript'],
     image: 'images/work4.png',
+    source: 'https://github.com/didierganthier/todo-list/',
     link: 'https://www.google.com',
   },
 ];
@@ -76,11 +80,9 @@ function addDesktopWorkSection() {
                 <img src="images/counter.png" alt="counter">
                 <p>${work.year}</p>
             </div>
-            <p class="work-description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+            <p class="work-description">${work.description ? `${work.description}` : 'A daily selection of privately personalized reads; no accounts or sign-ups required.'}</p>
             <ul class="tags">
-                <li class="tag">html</li>
-                <li class="tag">css</li>
-                <li class="tag">javascript</li>
+            ${work.tags.map((tag) => `<li class="tag">${tag}</li>`).join('')}
             </ul>
             <button class="work-link project">See Project</button>
         </div>   
@@ -111,11 +113,9 @@ function addMobileWorkSection() {
                         <img src="images/counter.png" alt="counter">
                         <p>2015</p>
                     </div>
-                    <p class="work-description">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <p class="work-description">${work.description ? `${work.description}` : 'A daily selection of privately personalized reads; no accounts or sign-ups required.'}</p>
                     <ul class="tags">
-                        <li class="tag">html</li>
-                        <li class="tag">css</li>
-                        <li class="tag">javascript</li>
+                    ${work.tags.map((tag) => `<li class="tag">${tag}</li>`).join('')}
                     </ul>
                     <button class="work-link project-mobile">See Project</button>
                 </div>   
@@ -156,6 +156,30 @@ function setWorkCards(projectsEl, popupClassName, title, company, companyTitle, 
       document.getElementsByClassName(title)[1].innerHTML = works[i].title;
       document.getElementsByClassName(company)[1].innerHTML = works[i].company;
       document.getElementsByClassName(companyTitle)[1].innerHTML = works[i].companyTitle;
+      // Set description
+      if (works[i].description) {
+        document.getElementsByClassName('work-description')[0].innerHTML = works[i].description;
+        document.getElementsByClassName('work-description')[1].innerHTML = works[i].description;
+      } else {
+        document.getElementsByClassName('work-description')[0].innerHTML = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
+        document.getElementsByClassName('work-description')[1].innerHTML = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
+      }
+
+      // Set tags
+      document.getElementsByClassName('tags')[0].innerHTML = '';
+      document.getElementsByClassName('tags')[1].innerHTML = '';
+      works[i].tags.forEach((tag) => {
+        const tagEl = document.createElement('li');
+        tagEl.classList.add('tag');
+        tagEl.innerHTML = tag;
+        document.getElementsByClassName('tags')[0].appendChild(tagEl);
+        document.getElementsByClassName('tags')[1].appendChild(tagEl);
+      });
+      // Set link
+      document.getElementsByClassName('work-link')[0].href = works[i].link;
+      document.getElementsByClassName('work-link')[1].href = works[i].source;
+      document.getElementsByClassName('work-link')[2].href = works[i].link;
+      document.getElementsByClassName('work-link')[3].href = works[i].source;
       document.getElementsByClassName(year)[1].innerHTML = works[i].year;
       document.getElementsByClassName(image)[0].src = works[i].image;
       document.getElementsByClassName(popupClassName)[0].classList.toggle('isHidden');

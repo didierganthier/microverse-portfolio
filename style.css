@@ -50,6 +50,7 @@
   /* Mobile Popup */
   .mobile-popup {
     position: fixed;
+    overflow: scroll;
     top: 10px;
     left: 16px;
     right: 16px;
